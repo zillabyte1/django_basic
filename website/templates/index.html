@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load tags %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<div id="section_home" class="section22">
+    <div class="container">
+
+        <div class="row g-xl-5 align-items-center">
+
+            <div class="col-12 col-lg-6 mb-5">
+                <h2 class="h1 fw-bold mb-4">
+                    Welcome to <span class="text-primary fw-medium">darrenfuller.net</span> 
+                </h2>
+
+                <p class="lead mb-5">
+                    <p>
+                        Welcome to my corner of the web. My name is Darren Fuller and I work as a software developer. I've been doing it for a while and have a lot of experience 
+                        creating all types of software and data-driven solutions.
+                    </p>
+                    <p>
+                        When I'm not working, I keep busy with my two sons, Logan and Dylan. Oh, and our dog, Blue. We go swimming, hiking, camping, and anything outside when we can. 
+                        Personally, I like movies, sports, reading, programming, techie stuff, etc... 
+                    </p>
+                    <p>
+                        You can find me on social media. I have a presence but I don't post a lot. I prefer to build my own site from scratch and have fun doing it! 
+                        The geek inside me thinks it fun. I like to experiment with new technologies in my extra time. Yes, I spend my precious free time 
+                        browsing tech blogs and playing with new development patterns. I am human.  
+                    </p>
+                    <p>
+                        This is my home base. Check back here for updates. You can contact me through social media and say hi. Thanks for visiting. 
+                    </p>
+                    <p>Cheers</p>
+                    <h4>Darren Fuller</h4>
+                </p>
+            </div>
+
+            <div class="col-12 col-lg-6 mb-5">
+
+                <div class="row gutters-md g-2 g-xl-4">
+
+                    <div class="col-6 jarallax" data-jarallax-element="-20">
+                        <div class="bg-white shadow-xs rounded-xl p-4 mb-4 bg-primary-soft-hover transition-bg-ease-150 text-decoration-none text-gray-800">
+                            <img style="width:220px;height:220px;" class="bg-white mb-4 border border-light rounded-circle shadow-md d-inline-flex justify-content-center align-items-center"  src="{% static 'images/darren.png' %}" alt="Darren">
+                            <div class="">Darren</div>
+                        </div>
+
+                        <div class="bg-white shadow-xs rounded-xl p-4 mb-4 bg-warning-soft-hover transition-bg-ease-150 text-decoration-none text-gray-800">
+                            <img style="width:220px;height:220px;" class="bg-white mb-4 border border-light rounded-circle shadow-md d-inline-flex justify-content-center align-items-center" src="{% static 'images/logan.png' %}" alt="Logan">
+                            <div class="">Logan</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-6 jarallax" data-jarallax-element="-20">
+
+                        <div class="bg-white shadow-xs rounded-xl p-4 mb-4 bg-success-soft-hover transition-bg-ease-150 text-decoration-none text-gray-800">
+                            <img style="width:220px;height:220px;" class="bg-white mb-4 border border-light rounded-circle shadow-md d-inline-flex justify-content-center align-items-center" src="{% static 'images/blue.png' %}" alt="Blue">
+                            <div class="">Blue</div>
+                        </div>
+
+                        <div class="bg-white shadow-xs rounded-xl p-4 mb-4 bg-danger-soft-hover transition-bg-ease-150 text-decoration-none text-gray-800">
+                            <img style="width:220px;height:220px;" class="bg-white mb-4 border border-light rounded-circle shadow-md d-inline-flex justify-content-center align-items-center" src="{% static 'images/dylan.png' %}" alt="Dylan">
+                            <div class="">Dylan</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
