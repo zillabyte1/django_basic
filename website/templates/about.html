@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load tags %}
+{% load static %}
+
+{% block title %}About Us{% endblock title %}
+
+{% block content %}
+
+<div id="section_about" class="section22">
+    <div class="container">
+
+        <h1 class="mt-4 mb-4">About Page</h1>
+
+        <div>
+
+            {% include "partials/likes_area.html" with greeting="Hello Darren" %}
+        </div>
+        
+        <img src="{% static 'images/flags.png' %}" alt="My image">
+        
+        {% current_time "%Y-%m-%d %I:%M %p" as the_time %}
+        <p>The time is {{ the_time }}.</p>
+        
+        {% modal %}
+            <h1>Look ma! I'm in a modal!</h1>
+        {% endmodal %}
+        
+        {% lorem 3 p %}
+
+    </div>
+</div>
+
+{% endblock %}
